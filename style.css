@@ -108,3 +108,6 @@ main {
     max-height: 100vh; 
 }
 
+.higlight {
+    background: rgb(199, 114, 114);
+}

@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box ;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh ;
+}
+
+.massage {
+    padding: 15px;
+    width: calc(135px * 3);
+    background: rgb(108, 161, 221);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 22px;
+    
+}
+
+.tictactor-game {
+    background: #000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+}
+
+.cell {
+    width: 135px;
+    height: 135px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.cross-hover::before,
+.circle-hover::before,
+.circle::before,
+.cross::before {
+    content: '\274C';
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.circle-hover::before,
+.circle::before {
+    content: '\2B55';
+}
+
+.cross-hover::before,
+.circle-hover::before {
+    opacity: 0.3;
+    filter: grayscale(100%);
+}
+
+.overley {
+    max-height: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.815);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    overflow: hidden;
+}
+
+.overley h1 {
+    font-size: 55px;
+}
+
+.btns-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn-restart {
+    background: green;
+}
+
+.btn-quit {
+    background: red;
+}
+
+.overley.active {
+    max-height: 100vh; 
+}
+

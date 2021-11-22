@@ -7,17 +7,17 @@ main {
     margin: 0;
     display: grid;
     place-items: center;
-    min-height: 100vh;
 }
 
 .massage {
     padding: 15px;
-    width: calc(135px * 3);
+    width: calc(120px * 3);
     background: rgb(108, 161, 221);
     border-radius: 5px;
     text-align: center;
     font-size: 22px;
-    
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 .tictactor-game {
@@ -28,8 +28,8 @@ main {
 }
 
 .cell {
-    width: 135px;
-    height: 135px;
+    width: 200px;
+    height: 200px;
     background: #fff;
     cursor: pointer;
 }
@@ -44,7 +44,6 @@ main {
     justify-content: center;
     align-items: center;
     height: 100%;
-    
 }
 
 .circle-hover::before,
@@ -107,7 +106,7 @@ main {
 }
 
 .overley.active {
-    max-height: 100vh; 
+    max-height: 200vh; 
 }
 
 .higlight {

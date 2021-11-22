@@ -7,7 +7,7 @@ main {
     margin: 0;
     display: grid;
     place-items: center;
-    min-height: 100vh ;
+    min-height: 100vh;
 }
 
 .massage {
@@ -38,17 +38,19 @@ main {
 .circle-hover::before,
 .circle::before,
 .cross::before {
-    content: '\274C';
+    content: '\108AB';
     font-size: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    
 }
 
 .circle-hover::before,
 .circle::before {
-    content: '\2B55';
+    content: '\2B58';
+    color: red;
 }
 
 .cross-hover::before,
